@@ -37,7 +37,7 @@ The dataset used in this project is publicly available on Kaggle. You can access
 - Missing values were handled by dropping rows with missing data in the `exang` and `cp` columns, as they only represented 3 rows and did not significantly affect the dataset. For `trtbps` and `chol`, missing values were replaced with the mean of each respective column.
 - The dataset was divided into categorical and continuous variables, with `output` as the target variable.
 - A Chi-Square test (`chi2_contingency`) was used for continuous variables to identify the strongest relationships with the target variable, revealing significant relationships with `sex`, `chest pain type`, `exang`, `ca`, and `thalach`.
-- An ANOVA test was performed for categorical variables to analyze their relationship with the target variable.
+- An pointbiserialr test was performed for categorical variables to analyze their relationship with the target variable.
 
 ## Models Used
 The following machine learning models were tested for predicting heart attack risk:
